@@ -1,6 +1,6 @@
 let count=0;
 
-let time=setInterval(showNext,60000);
+let time=setInterval(showNext,30000);
 
 function showNext()
 {
