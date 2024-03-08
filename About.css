@@ -1,0 +1,68 @@
+.about
+{
+    background-color: rgba(250, 227, 215, 0.914);
+    height: auto;
+    width: auto;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    /* box-shadow: inset 0 0 10px #fff; */
+}
+.about>span, .photos>span
+{
+    font-size: 40px;
+    color:rgb(63, 138, 141);
+    font-weight: 600;
+}
+.aboutp
+{
+    font-size: x-large;
+}
+.Educationp,.Skillsp,.experiencep
+{
+    font-size: x-large;
+}
+.Skillsp
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.Skillsp>div>ul
+{
+    list-style: none;
+}
+.experiencep
+{
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+    text-align: center;
+}
+.Resume
+{
+    font-size: large;
+    padding:1%;
+    background-color: rgba(255, 230, 0, 0.855);
+    border: none;
+}
+.Resume a
+{
+    color:rgb(63, 138, 141); 
+    text-decoration: none;
+}
+.Resume:hover
+{
+    background-color: rgb(63, 138, 141);
+    cursor: pointer;
+}
+.Resume:hover a
+{
+    color:  rgba(255, 230, 0, 0.855);
+    text-decoration: none;
+}
+.Educationp,.Skillsp,.experiencep
+{
+    visibility:hidden;
+    height: 0px;
+}

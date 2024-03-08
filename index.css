@@ -1,0 +1,438 @@
+body
+{
+    margin: 0px;
+}
+.left
+{
+    position: relative;
+    width: 100%;
+}
+.front
+{
+    float: left;
+    background-color:rgb(63, 138, 141);
+    height: 120vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 49%;
+}
+.img
+{
+    float: right;
+    width: 50%;
+    height: 120vh;
+    overflow: hidden;
+    background-color: aquamarine;
+}
+#name>a
+{
+    font-size: 2em;
+    color:rgba(255, 230, 0, 0.855);
+    padding-left: 15%;
+    margin-top: 5%;
+    font-weight: 500;
+    text-decoration: none;
+}
+#nav
+{
+    color: white;
+    list-style: none;
+    padding-left: 20%;
+}
+#nav>li
+{
+    margin-left: 3%;
+    margin-right: 3%;
+    float: left;
+    font-size: larger;
+    margin-top: -4%;
+}
+#nav>li>a
+{
+    text-decoration: none;
+    color: white;
+}
+.hey
+{
+    font-size: 50px;
+    /* text-align: center; */
+    color:rgba(255, 230, 0, 0.855);
+    position: relative;
+    left: 32%;
+    padding-top: 25%;
+    /* padding-left: 50%; */
+    width:100%;
+}
+.name
+{
+    font-size: 100px;
+    margin-top: -10%;
+    /* text-align: center; */
+    display: block;
+    /* padding-left: 50%; */
+    margin-bottom: 0px;
+    position: relative;
+    left: 32%;
+    color: white;
+    width: 100%;
+    font-weight: 400;
+}
+.img
+{
+    text-align: center;
+}
+.skill
+{
+    font-size: larger;
+    position: relative;
+    left: 32%;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.892);
+}
+.about
+{
+    background-color: rgba(250, 227, 215, 0.914);
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    /* box-shadow: inset 0 0 10px #fff; */
+}
+.about>span, .photos>span
+{
+    font-size: 40px;
+    color:rgb(63, 138, 141);
+    font-weight: 600;
+}
+.aboutp
+{
+    font-size: x-large;
+}
+.Educationp,.Skillsp,.experiencep
+{
+    font-size: x-large;
+}
+.Skillsp
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.Skillsp>div>ul
+{
+    list-style: none;
+}
+.before,.next
+{
+    background:none;
+    border-width: 0px;
+}
+.before:hover,.next:hover
+{
+    cursor: pointer;
+}
+.experiencep
+{
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+    text-align: center;
+}
+.Resume
+{
+    font-size: large;
+    padding:1%;
+    background-color: rgba(255, 230, 0, 0.855);
+    border: none;
+}
+.Resume a
+{
+    color:rgb(63, 138, 141); 
+    text-decoration: none;
+}
+.Resume:hover
+{
+    background-color: rgb(63, 138, 141);
+    cursor: pointer;
+}
+.Resume:hover a
+{
+    color:  rgba(255, 230, 0, 0.855);
+    text-decoration: none;
+}
+.Educationp,.Skillsp,.experiencep
+{
+    visibility:hidden;
+    height: 0px;
+}
+#before>button,#next>button
+{
+    position:inherit;
+    margin-top: 50vh;
+    width: fit-content;
+}
+#before
+{
+    float: left;
+}
+#next
+{
+    float: right;
+}
+#before>button>span,#next>button>span
+{
+    font-size: 60px;
+}
+.photos
+{
+    height: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+#img1
+{
+    float: left;
+    height: 40vh;
+    margin-right: 2%;
+    width: 38%;
+    background-color: aqua;
+}
+#img5
+{
+    float: left;
+    height: 40vh;
+    margin-right: 2%;
+    width: 38%;
+    background-color: aqua;
+    margin-top: 2%;
+}
+#img2
+{
+    float: left;
+    height: 40vh;
+    width: 60%;
+    background-color: cornflowerblue;
+    /* margin-top: 2%; */
+}
+#img6
+{
+    float: left;
+    height: 40vh;
+    width: 60%;
+    background-color: cornflowerblue;
+    margin-top: 2%;
+}
+#img4
+{
+    float: left;
+    height: 40vh;
+    width: 38%;
+    background-color: aqua;
+    margin-top: 2%;
+}
+#img3
+{
+    float: left;
+    height: 40vh;
+    width: 60%;
+    margin-right: 2%;
+    background-color: cornflowerblue;
+    margin-top: 2%;
+}
+.contact
+{
+    margin-top: 58%;
+    height: auto;
+}
+.front1
+{
+    float: left;
+    background-color:rgb(63, 138, 141);
+    height: 120vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 49%;
+}
+.imgdown
+{
+    float: right;
+    width: 50%;
+    height: 120vh;
+    overflow: hidden;
+    background-color: aquamarine;
+}
+#Contact
+{
+    font-size:60px;
+    color:  rgba(255, 230, 0, 0.855);
+    position: relative;
+    /* width: 100%; */
+    /* text-align: center; */
+    padding-bottom: 2%;
+    padding-top: 8%;
+    /* width: max-content; */
+    margin: 0px;
+    margin-left: 7vh;
+    height: auto;
+}
+#Details
+{
+    font-size:25px;
+    color: white;
+    position: relative;
+    margin: 0px;
+    margin-left: 7vh;
+    top: 15vh;
+    width: fit-content;
+    /* margin-top: -100%; */
+    height: auto;
+}
+@media screen and (max-width:1250px) 
+{
+    .hey
+    {
+        font-size: 50px;
+        /* text-align: center; */
+        color:rgba(255, 230, 0, 0.855);
+        position: relative;
+        left: 15%;
+        padding-top: 25%;
+        /* padding-left: 50%; */
+        width:100%;
+    }
+    .name
+    {
+        font-size: 100px;
+        margin-top: -10%;
+        /* text-align: center; */
+        display: block;
+        /* padding-left: 50%; */
+        margin-bottom: 0px;
+        position: relative;
+        left: 15%;
+        color: white;
+        width: 100%;
+        font-weight: 400;
+    }
+    .skill
+    {
+        font-size: larger;
+        position: relative;
+        left: 15%;
+        width: 100%;
+        color: rgba(255, 255, 255, 0.892);
+    }
+}
+@media screen and (max-width:1050px)
+{
+    .front
+    {
+        float: none;
+        width: 100%;
+        height: 90vh;
+    }
+    .front1
+    {
+        float: none;
+        width: 100%;
+        height: 70vh;
+    }
+    .img,.imgdown
+    {
+        width: 100%;
+        float: none;
+        height: auto;
+    }
+    .hey
+    {
+        font-size: 50px;
+        /* text-align: center; */
+        color:rgba(255, 230, 0, 0.855);
+        position: relative;
+        left: 25%;
+        padding-top: 25%;
+        /* padding-left: 50%; */
+        width:100%;
+    }
+    .name
+    {
+        font-size: 100px;
+        margin-top: -10%;
+        /* text-align: center; */
+        display: block;
+        /* padding-left: 50%; */
+        margin-bottom: 0px;
+        position: relative;
+        left: 25%;
+        color: white;
+        width: 100%;
+        font-weight: 400;
+    }
+    .skill
+    {
+        font-size: larger;
+        position: relative;
+        left: 25%;
+        width: 100%;
+        color: rgba(255, 255, 255, 0.892);
+    }
+    #img1
+    {
+        float: none;
+        height: 40vh;
+        margin-right: 2%;
+        width: 100%;
+        background-color: aqua;
+    }
+    #img5
+    {
+        float: none;
+        height: 40vh;
+        margin-right: 2%;
+        width: 100%;
+        background-color: aqua;
+        margin-top: 2%;
+    }
+    #img2
+    {
+        float: none;
+        height: 40vh;
+        width: 100%;
+        background-color: cornflowerblue;
+        margin-top: 2%;
+    }
+    #img6
+    {
+        float: none;
+        height: 40vh;
+        width: 100%;
+        background-color: cornflowerblue;
+        margin-top: 2%;
+    }
+    #img4
+    {
+        float: none;
+        height: 40vh;
+        width: 100%;
+        background-color: aqua;
+        margin-top: 2%;
+    }
+    #img3
+    {
+        float: none;
+        height: 40vh;
+        width: 100%;
+        margin-right: 2%;
+        background-color: cornflowerblue;
+        margin-top: 2%;
+    }
+    .contact
+    {
+        margin-top: 3%;
+        height: auto;
+    }
+}

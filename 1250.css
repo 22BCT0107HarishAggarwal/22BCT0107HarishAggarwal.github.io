@@ -1,0 +1,36 @@
+@media screen and (max-width:1250px) 
+{
+    .hey
+    {
+        font-size: 50px;
+        /* text-align: center; */
+        color:rgba(255, 230, 0, 0.855);
+        position: relative;
+        left: 15%;
+        padding-top: 25%;
+        /* padding-left: 50%; */
+        width:100%;
+    }
+    .name
+    {
+        font-size: 100px;
+        margin-top: -10%;
+        /* text-align: center; */
+        display: block;
+        /* padding-left: 50%; */
+        margin-bottom: 0px;
+        position: relative;
+        left: 15%;
+        color: white;
+        width: 100%;
+        font-weight: 400;
+    }
+    .skill
+    {
+        font-size: larger;
+        position: relative;
+        left: 15%;
+        width: 100%;
+        color: rgba(255, 255, 255, 0.892);
+    }
+}
