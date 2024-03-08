@@ -7,23 +7,46 @@ body
     position: relative;
     width: 100%;
 }
+.Home
+{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
 .front
 {
     float: left;
     background-color:rgb(63, 138, 141);
-    height: 120vh;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     width: 49%;
+    padding-bottom: 5%;
 }
 .img
 {
     float: right;
     width: 50%;
-    height: 120vh;
+    height: auto;
     overflow: hidden;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
+}
+.profile
+{
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    position: relative;
+    top: 10%;
+    left: 10%;
+}
+.Harish_Profile_picture
+{
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
 }
 #name>a
 {
@@ -94,7 +117,7 @@ body
 {
     background-color: rgba(250, 227, 215, 0.914);
     height: auto;
-    width: 100%;
+    width: auto;
     overflow: hidden;
     position: relative;
     text-align: center;
@@ -123,15 +146,6 @@ body
 .Skillsp>div>ul
 {
     list-style: none;
-}
-.before,.next
-{
-    background:none;
-    border-width: 0px;
-}
-.before:hover,.next:hover
-{
-    cursor: pointer;
 }
 .experiencep
 {
@@ -167,24 +181,6 @@ body
     visibility:hidden;
     height: 0px;
 }
-#before>button,#next>button
-{
-    position:inherit;
-    margin-top: 50vh;
-    width: fit-content;
-}
-#before
-{
-    float: left;
-}
-#next
-{
-    float: right;
-}
-#before>button>span,#next>button>span
-{
-    font-size: 60px;
-}
 .photos
 {
     height: auto;
@@ -194,77 +190,109 @@ body
 }
 #img1
 {
+    border-radius: 2%;
     float: left;
     height: 40vh;
     margin-right: 2%;
     width: 38%;
-    background-color: aqua;
+    background-image: url("NVIDIA.png");
+    background-size: cover;
 }
-#img5
+/* #img5
 {
+    border-radius: 2%;
     float: left;
     height: 40vh;
     margin-right: 2%;
     width: 38%;
     background-color: aqua;
     margin-top: 2%;
-}
+} */
 #img2
 {
+    border-radius: 2%;
     float: left;
     height: 40vh;
     width: 60%;
-    background-color: cornflowerblue;
+    background-image: url("Solar.png");
+    background-size: cover;
     /* margin-top: 2%; */
 }
-#img6
+/* #img6
 {
+    border-radius: 2%;
     float: left;
     height: 40vh;
     width: 60%;
     background-color: cornflowerblue;
     margin-top: 2%;
-}
+} */
 #img4
 {
+    border-radius: 2%;
     float: left;
     height: 40vh;
     width: 38%;
-    background-color: aqua;
+    background-image: url("Sidebar.png");
+    text-align: center;
+    background-size: cover;
     margin-top: 2%;
 }
 #img3
 {
+    border-radius: 2%;
     float: left;
     height: 40vh;
     width: 60%;
     margin-right: 2%;
-    background-color: cornflowerblue;
+    background-image: url("Spotify.png");
+    background-size: cover;
     margin-top: 2%;
+}
+#img4>a,#img3>a,#img1>a,#img2>a
+{
+    position: relative;
+    visibility: hidden;
+    color:black;
+    text-decoration: underline;
+    font-size: x-large;
+    top: 49%;
+}
+#img4:hover,#img3:hover,#img1:hover,#img2:hover
+{
+    background-image:none;
+    background-color:green;
+}
+#img4:hover > a,#img3:hover>a,#img1:hover>a,#img2:hover>a
+{
+    visibility: visible;
 }
 .contact
 {
-    margin-top: 58%;
+    /* margin-top: 58%; */
     height: auto;
+    display: flexbox;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .front1
 {
-    float: left;
+    float: none;
     background-color:rgb(63, 138, 141);
-    height: 120vh;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 49%;
+    width: 100%;
 }
-.imgdown
+/* .imgdown
 {
-    float: right;
+    float: left;
     width: 50%;
-    height: 120vh;
+    height: auto;
     overflow: hidden;
     background-color: aquamarine;
-}
+} */
 #Contact
 {
     font-size:60px;
@@ -283,13 +311,42 @@ body
 {
     font-size:25px;
     color: white;
-    position: relative;
+    position:static;
     margin: 0px;
-    margin-left: 7vh;
-    top: 15vh;
+    margin-left: 25%;
     width: fit-content;
     /* margin-top: -100%; */
     height: auto;
+}
+.footerlist
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.mainbox
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+}
+.box0,.box1,.box2
+{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.item
+{
+    margin-right: 5px;
+}
+h4
+{
+    height: auto;
+    text-align: right;
+    color: red;
 }
 @media screen and (max-width:1250px) 
 {
@@ -333,19 +390,18 @@ body
     {
         float: none;
         width: 100%;
-        height: 90vh;
+        height: auto;
     }
     .front1
     {
         float: none;
         width: 100%;
-        height: 70vh;
-    }
-    .img,.imgdown
-    {
-        width: 100%;
-        float: none;
         height: auto;
+    }
+    .img
+    {
+        height: 750px;
+        width: 100%;
     }
     .hey
     {
@@ -434,5 +490,87 @@ body
     {
         margin-top: 3%;
         height: auto;
+    }
+    .logo
+    {
+        height: 40px;
+        width: 40px;
+    }
+}
+@media screen and (max-width:550px)
+{
+    .front
+    {
+        overflow: hidden;
+    }
+    #Contact
+    {
+        font-size:40px;
+        color:  rgba(255, 230, 0, 0.855);
+        position: relative;
+        /* width: 100%; */
+        /* text-align: center; */
+        padding-bottom: 2%;
+        padding-top: 8%;
+        /* width: max-content; */
+        margin: 0px;
+        margin-left: 7vh;
+        height: auto;
+    }
+    #Details
+    {
+        font-size:15px;
+        color: white;
+        position:static;
+        margin: 0px;
+        margin-left: 25%;
+        width: fit-content;
+        /* margin-top: -100%; */
+        height: auto;
+    }
+    .footerlist
+    {
+        list-style: none;
+        margin: 0px;
+        margin-top: -15px;
+        padding: 0px;
+    }
+    .hey
+    {
+        font-size: 30px;
+        /* text-align: center; */
+        color:rgba(255, 230, 0, 0.855);
+        position: relative;
+        left: 5%;
+        padding-top: 25%;
+        /* padding-left: 50%; */
+        width:100%;
+    }
+    .name
+    {
+        font-size: 60px;
+        margin-top: -10%;
+        /* text-align: center; */
+        display: block;
+        /* padding-left: 50%; */
+        margin-bottom: 0px;
+        position: relative;
+        left: 5%;
+        color: white;
+        width: 100%;
+        font-weight: 400;
+    }
+    .skill
+    {
+        font-size: medium;
+        position: relative;
+        left: 5%;
+        width: 100%;
+        color: rgba(255, 255, 255, 0.892);
+    }
+    .img
+    {
+        height: 500px;
+        width: 100%;
     }
 }
